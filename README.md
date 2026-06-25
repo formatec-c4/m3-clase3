@@ -185,7 +185,7 @@ docker exec -it python-app sh
 Dentro del contenedor:
 
 ```bash
-tr '\0' ' ' < /proc/1/cmdline
+tr '\000' ' ' < /proc/1/cmdline; echo
 exit
 ```
 
